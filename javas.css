@@ -1,0 +1,75 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.section {
+    padding: 4% 8% 0;
+
+}
+
+.section-heading {
+    font-size: 28px;
+    opacity: 0.8;
+    font-weight: 600;
+}
+
+.product-grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: calc(20% - 1%);
+    margin: 0.5%;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #ccc;
+}
+
+.preview-image {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.product-info-wrapper {
+    padding: 16px;
+}
+
+.product-name {
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.product-brand {
+    font-size: 13px;
+    opacity: 0.8;
+    margin: 12px 0 0;
+    font-weight: 600;
+}
+
+.product-price {
+    margin: 12px 0 0;
+    font-weight: 600;
+    color: #009688;
+}
+
+@media (max-width: 400px) {
+    .product-card {
+        width: calc(50% - 1%);
+    }
+
+    .product-name, .product-price {
+        font-size: 12px;
+    }
+
+    .product-brand {
+        font-size: 10px;
+    }
+}
